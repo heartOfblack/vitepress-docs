@@ -1,0 +1,20 @@
+{
+  "name": "energy-storage-standard-doc",
+  "author": "chensiyuan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run register:components && vitepress dev docs",
+    "build": "npm run register:components && vitepress build docs",
+    "serve": "vitepress serve docs",
+    "register:components": "vitepress-rc"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "element-plus": "^2.1.10",
+    "sass": "^1.50.1",
+    "vitepress": "^0.22.3",
+    "vitepress-theme-demoblock": "^1.4.2"
+  }
+}
