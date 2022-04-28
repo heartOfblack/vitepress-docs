@@ -1,0 +1,5 @@
+@mixin process-background($deg,$color,$width) {
+  height: inherit;
+  background-image: linear-gradient($deg, $color 0% 33.33%, transparent 33.33% 66.66%, $color 66.66% 100%);
+  background-size:$width 100%
+}

@@ -1,0 +1,29 @@
+.el-pagination {
+  --el-pagination-font-size: 12px;
+  --el-pagination-bg-color: transparent;
+  --el-pagination-text-color: var(--hd--color-text-secondary);
+  --el-pagination-border-radius: 0;
+  --el-pagination-button-color: var(--hd--color-text-secondary);
+  --el-pagination-button-width: 32px;
+  --el-pagination-button-height: 32px;
+}
+
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+  background-color: transparent;
+  border: 1px solid var(--hd--border-color-base);
+  border-radius: 0;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  color: var(--hd--color-primary);
+  background-color: var(--hd--color-primary-20);
+  border-color: var(--hd--color-primary);
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+  color: var(--hd--color-primary);
+  background-color: var(--hd--color-primary-30);
+  border-color: var(--hd--color-primary);
+}

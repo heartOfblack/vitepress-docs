@@ -1,0 +1,87 @@
+.el-message-box {
+  --el-messagebox-border-radius: 0;
+  --el-messagebox-font-size: 16px;
+
+  position: relative;
+  background-color: var(--hd--background-color-base);
+  border: 1px solid var(--hd--color-primary-30);
+  overflow: initial;
+}
+
+.el-message-box__header {
+  min-height: 25px;
+  border-bottom: 1px solid var(--hd--border-color-other);
+}
+
+.el-message-box__headerbtn {
+  z-index: 1;
+}
+
+/* 头部4个粗角 */
+.el-message-box::before,
+.el-message-box::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-top: 3px solid var(--hd--color-primary);
+  border-bottom: 3px solid transparent;
+}
+
+.el-message-box::before {
+  left: -1px;
+  border-left: 3px solid var(--hd--color-primary);
+  border-right: 3px solid transparent;
+}
+
+.el-message-box::after {
+  right: -1px;
+  border-right: 3px solid var(--hd--color-primary);
+  border-left: 3px solid transparent;
+}
+
+/* 头部4个细角 */
+.el-message-box__header::before,
+.el-message-box__header::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-top: 1px solid var(--hd--color-primary);
+}
+
+.el-message-box__header::before {
+  left: -1px;
+  border-left: 1px solid var(--hd--color-primary);
+}
+
+.el-message-box__header::after {
+  right: -1px;
+  border-right: 1px solid var(--hd--color-primary);
+}
+
+/* 底部4个细角 */
+.el-message-box__content::before,
+.el-message-box__content::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-bottom: 1px solid var(--hd--color-primary);
+}
+
+.el-message-box__content::before {
+  left: -1px;
+  border-left: 1px solid var(--hd--color-primary);
+}
+
+.el-message-box__content::after {
+  right: -1px;
+  border-right: 1px solid var(--hd--color-primary);
+}

@@ -1,7 +1,8 @@
+
 module.exports = {
   title: '储能通用组件',
   description: '储能组件文档',
-  // lang: 'zh-CN',
+  lang: 'zh-CN',
   themeConfig: {
     lastUpdated: 'Last Updated',
     //首页导航
@@ -22,6 +23,26 @@ module.exports = {
       '/': getGuideSidebar()
     }
   },
+  vite: {
+    build: {
+      chunkSizeWarningLimit: 10000
+  
+    },
+    css: {
+      postcss: {
+        plugins: [{
+          postcssPlugin: 'internal:charset-removal',
+          AtRule: {
+            charset: (atRule) => {
+              if (atRule.name === 'charset') {
+                atRule.remove()
+              }
+            }
+          }
+        }]
+      }
+    }
+  },
   markdown: {
     // options for markdown-it-anchor
     // anchor: { permalink: false },
@@ -34,7 +55,7 @@ module.exports = {
         demoBlockPlugin
       } = require( 'vitepress-theme-demoblock' )
       md.use( demoBlockPlugin, {
-        cssPreprocessor: 'sass',
+        cssPreprocessor: 'scss',
         scriptImports: ["import * as ElementPlus from 'element-plus'"],
       scriptReplaces: [
         { searchValue: /const ({ defineComponent as _defineComponent }) = Vue/g,
@@ -44,7 +65,6 @@ module.exports = {
           replaceValue: (s, s1) => `const ${s1} = ElementPlus`
         }
       ]
-        /* cssPreprocessor: 'sass'*/
       }  )
     }
   }
@@ -52,18 +72,27 @@ module.exports = {
 
 function getGuideSidebar() {
   return [ {
-      text: '介绍',
+      text: '',
       children: [ {
-        text: '使用方式',
+        text: '基础介绍',
         link: '/'
       }, ]
     },
     {
-      text: '复合组件',
+      text: '组件示例',
       children: [ {
-        text: '查询区域',
-        link: '/button/'
-      }, ]
+        text: '块级元素-BaseBlock',
+        link: '/md/BaseBlock/'
+      },
+      {
+        text: '占位图-BaseEmpty',
+        link: '/md/BaseEmpty/'
+      },
+      {
+        text: 'Tag-BaseTag',
+        link: '/md/BaseTag/'
+      }
+    ]
     }
   ]
 }

@@ -1,0 +1,12 @@
+.el-dropdown__popper {
+  --el-dropdown-menuItem-hover-fill: var(--hd--background-color-hover);
+  --el-dropdown-menuItem-hover-color: var(--hd--color-text-regular);
+}
+
+.el-dropdown__popper.el-popper[role=tooltip] {
+  background-color: var(--hd--background-color-base);
+}
+
+.el-dropdown-menu {
+  background-color: var(--hd--background-color-base);
+}

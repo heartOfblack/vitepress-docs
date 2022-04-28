@@ -1,0 +1,109 @@
+:root {
+  /*	全局scss变量，主要定义UI风格设计规范里的颜色 */
+  --hd--color-primary: #22e5d1; /* 用于重要级文字信息，需要特别强调和突出的文字、图标、按钮 */
+  --hd--color-success: #22e5d1; /* 表示成功的操作提醒 */
+  --hd--color-warning: #ff8800; /* 表示警告的操作提醒 */
+  --hd--color-danger: #ff474e; /* 表示危险的操作提醒 */
+  --hd--color-info: #cccccc; /* 表示信息 */
+
+  /* 图表中14个基本色-------------------------start */
+  --hd--color-blue: #1f78ff; /* 蓝色 */
+  --hd--color-green: #22e5d1; /* 绿色 */
+  --hd--color-orange: #ff8800; /* 橙色 */
+  --hd--color-cyan: #00c17f; /* 青色 */
+  --hd--color-purple: #a54fe3; /* 紫色 */
+  --hd--color-yellow: #f4d64e; /* 黄色 */
+  --hd--color-rose: #ff2787; /* 玫红色 */
+  --hd--color-violet: #6600ff; /* 紫罗蓝 */
+  --hd--color-red: #ff474e; /* 红色 */
+
+  /* 文字 */
+  --hd--color-text-primary: #ffffff; /* 主要文字。用于一级信息：页面标题，内容模块标题，重要数据文字 */
+  --hd--color-text-regular: #cccccc; /* 常规文字。用于二级信息，大部分正文内容 */
+  --hd--color-text-secondary: #999999; /* 次要文字。用于三级信息，辅助说明文字，图表坐标数据文字等 */
+  --hd--color-text-placeholder: #666666; /* 占位文字。用于次要辅助说明文字 */
+  --hd--color-text-light: #cffffa; /* 亮色文字。用于一级信息：首页、导航等部分提亮文字 */
+
+  /* 表格 */
+  --hd--color-table: #20272d;
+
+  /* 背景 */
+  --hd--background-color-base:#1E2229;
+  --hd--background-color-block:#171a1f;
+  --hd--background-color-hover: #252e36; /* 悬停背景色 */
+  --hd--background-color-tag: #1c2129;
+
+  /* 边框色 */
+  --hd--border-color-base: #666666; /* 表单等元素的边框 */
+  --hd--border-color-other: #33373d; /* 弹窗等进一步交互出来的元素的边框 */
+
+  /* 禁用色 */
+  --hd--disabled-text-color: #666666; /* 禁用元素前景色 */
+  --hd--disabled-border-color: #333333; /* 禁用元素边框色 */
+  --hd--disabled-bg-color: rgba(51, 51, 51, 0.3); /* 禁用元素背景色 */
+
+  /* 滚动条颜色 */
+  --hd--color-scrollbar: rgba(102, 102, 102, .3);
+  --hd--color-scrollbar-hover: rgba(102, 102, 102, .6);
+  --hd--background-color-scrollbar: rgba(102, 102, 102, .2);
+
+  /* 部分区块背景色 */
+--hd--background-color-block-some: rgba(102, 102, 102, .2);
+
+  /* 曲角度数 */
+  --hd--border-radius-base: 0px;
+
+  /* 字体 */
+  --hd--font-size-base: 14px;
+  
+  /* 百分比色值 */
+  --hd--color-primary-10: #22e5d11a;
+  --hd--color-primary-20: #22e5d133;
+  --hd--color-primary-30: #22e5d14d;
+  --hd--color-primary-40: #22e5d166;
+  --hd--color-primary-50: #22e5d180;
+  --hd--color-primary-60: #22e5d199;
+  --hd--color-primary-70: #24e5d2b3;
+  --hd--color-primary-80: #24e5d2cc;
+  --hd--color-primary-90: #24e5d2e6;
+
+  --hd--color-danger-20: #ff474e33;
+  --hd--color-danger-30: #ff474e4d;
+  --hd--color-danger-40: #ff474e66;
+
+  --hd--color-blue-10: #1f78ff1a;
+  --hd--color-blue-20: #1f78ff33;
+  --hd--color-blue-40: #1f78ff66;
+
+  --hd--color-green-20: #22e5d133; 
+  --hd--color-green-40: #22e5d166;
+
+  --hd--color-orange-20: #ff880033; 
+  --hd--color-orange-40: #ff880066; 
+
+  --hd--color-cyan-20: #00c17f33; 
+  --hd--color-cyan-40: #00c17f66; 
+
+  --hd--color-yellow-10: #f4d64e1a;
+  --hd--color-yellow-70:#f4d64eb3;
+
+  --hd--color-red-10: #ff474e1a;
+  --hd--color-red-70: #ff474eb3;
+
+  --hd--disabled-border-color-30: #3333334d;
+
+  --hd--color-table-50: #20272d80;
+
+  --hd--background-color-block-60: #171a1f99;
+  --hd--background-color-block-80: #171A1FCC;
+
+  --hd--color-orange-20: #ff880033;
+
+  /* 首页模块背景颜色 */
+  --hd--background-color-other-60: #141E2699;
+  --hd--background-color-other-80: #141E26cc;
+
+  --hd--background-color-hover-70: #252e36b3;
+  --hd--color-text-placeholder-20: #66666633;
+  --hd--color-text-placeholder-70: #666666b3;
+}

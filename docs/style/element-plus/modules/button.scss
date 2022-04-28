@@ -1,0 +1,59 @@
+.el-button {
+  font-size: var(--hd--font-size-base);
+  padding: 8px 20px; /*  !important */
+}
+
+.el-button:focus, .el-button:hover {
+  color: var(--hd--color-primary);
+}
+
+.el-button--default {
+  --el-button-bg-color: transparent !important;
+  --el-button-hover-bg-color: transparent !important;
+  --el-button-hover-border-color: var(--hd--color-primary-80) !important;
+  --el-button-active-bg-color: var(--hd--color-primary-40) !important;
+  --el-button-active-border-color: var(--hd--color-primary-80) !important;
+  
+  --el-button-text-color: var(--hd--color-text-regular);
+  --el-button-hover-text-color: var(--el-color-primary);
+}
+
+.el-button--primary {
+  --el-button-bg-color: var(--hd--color-primary-20) !important;
+  --el-button-border-color: var(--hd--color-primary-80) !important;
+  --el-button-hover-bg-color: var(--hd--color-primary-30) !important;
+  --el-button-hover-border-color: var(--hd--color-primary-80) !important;
+  --el-button-active-bg-color: var(--hd--color-primary-40) !important;
+  --el-button-active-border-color: var(--hd--color-primary-80) !important;
+
+  --el-button-text-color: var(--hd--color-primary);
+  --el-button-hover-text-color: var(--hd--color-primary);
+}
+
+.el-button--danger {
+  --el-button-bg-color: var(--hd--color-danger-20) !important;
+  --el-button-border-color: var(--hd--color-danger) !important;
+  --el-button-hover-bg-color: var(--hd--color-danger-30) !important;
+  --el-button-hover-border-color: var(--hd--color-danger) !important;
+  --el-button-active-bg-color: var(--hd--color-danger-40) !important;
+  --el-button-active-border-color: var(--hd--color-danger) !important;
+
+  --el-button-text-color: var(--hd--color-danger);
+  --el-button-hover-text-color: var(--hd--color-danger);
+}
+
+.el-button--text {
+  --el-button-text-color: #64EDDF;
+  --el-button-hover-text-color: #17A092;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.el-button.is-disabled:not(.el-button--text),
+.el-button.is-disabled:not(.el-button--text):hover,
+.el-button.is-disabled:not(.el-button--text):active,
+.el-button.is-disabled:not(.el-button--text):focus {
+  color: var(--hd--disabled-text-color);
+  border-color: var(--hd--disabled-border-color);
+  background-color: var(--hd--disabled-bg-color);
+}

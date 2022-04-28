@@ -1,0 +1,39 @@
+.el-alert {
+  --el-alert-title-font-size: 14px;
+}
+
+.el-alert--success,
+.el-alert--success.is-light {
+  color: var(--hd--color-primary);
+  background-color: #0f4b45;
+	border: solid 1px #194a41;
+}
+
+.el-alert--info,
+.el-alert--info.is-light {
+  color: var(--hd--color-info);
+  background-color: #323539;
+  border: solid 1px #3f4347;
+}
+
+.el-alert--warning,
+.el-alert--warning.is-light {
+  color: var(--hd--color-warning);
+  background-color: #3a2a1a;
+	border: solid 1px #4a3621;
+}
+
+.el-alert--error,
+.el-alert--error.is-light {
+  color: var(--hd--color-danger);
+  background-color: #3a2126;
+	border: solid 1px #4a2a31;
+}
+
+.el-alert.is-light .el-alert__closebtn {
+  color: var(--el-color-info);
+}
+
+.el-alert.is-light .el-alert__closebtn:hover {
+  color: var(--hd--color-text-primary);
+}

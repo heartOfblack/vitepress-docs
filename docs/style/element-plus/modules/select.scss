@@ -1,0 +1,21 @@
+.el-form .el-select {
+  width: 300px;
+}
+
+.el-select .el-select__tags .el-tag--info {
+  color: var(--hd--color-text-regular);
+  background-color: var(--hd--background-color-tag);
+  border-color: transparent;
+}
+.el-select__popper.el-popper[role=tooltip] {
+  border-color: var(--hd--border-color-other);
+  background-color: var(--hd--background-color-base);
+}
+.el-select__popper.el-popper[role=tooltip][data-popper-placement^=bottom] .el-popper__arrow::before {
+  border-top-color: var(--hd--border-color-other);
+  border-left-color: var(--hd--border-color-other);
+  background-color: var(--hd--background-color-base);
+}
+.el-select-dropdown__item.is-disabled {
+  color: var(--hd--disabled-text-color) !important;
+}

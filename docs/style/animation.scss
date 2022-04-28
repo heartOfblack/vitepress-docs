@@ -1,0 +1,195 @@
+.opening {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  z-index: 88;
+  pointer-events: none;
+}
+
+.earth-bg {
+  width: 100%;
+  height: 100%;
+  animation: earthBGToScale 1s ease-in;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  background: #071320;
+}
+@keyframes earthBGToScale {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    opacity: 1;
+  }
+  71% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+.earth {
+  width: 790px;
+  height: 819px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -425px 0 0 -425px;
+  animation: earthToScale 1s ease-in;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes earthToScale {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(4);
+  }
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  animation: mask 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes mask {
+  0% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.cloud1 {
+  position: absolute;
+  top: -200px;
+  left: 400;
+  width: 1546px;
+  height: 871px;
+  opacity: 0;
+  animation: cloud1 1s ease-in;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes cloud1 {
+  0% {
+    left: 400px;
+  }
+  20% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: 900px;
+    transform: scale(2);
+  }
+}
+.cloud2 {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  margin-left: -640px;
+  width: 1280px;
+  height: 509px;
+  opacity: 0;
+  animation: cloud2 1s ease-in;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes cloud2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 700px;
+    transform: scale(4);
+  }
+}
+.cloud3 {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  width: 1188px;
+  height: 836px;
+  opacity: 0;
+  animation: cloud3 1s ease-in;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes cloud3 {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: 0;
+    transform: scale(4);
+  }
+}
+
+.bigCircle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  box-shadow: 0 0 5px #00aeff, 0 0 2px #00d5ff inset;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  opacity: 0;
+  animation: bigCircle 1s ease-in;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes bigCircle {
+  0% {
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(20);
+  }
+}

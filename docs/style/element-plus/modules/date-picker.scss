@@ -1,0 +1,56 @@
+.el-date-editor {
+  --el-date-editor-width: 300px;
+  --el-date-editor-monthrange-width: 300px;
+  --el-date-editor-daterange-width: 300px;
+  --el-date-editor-datetimerange-width: 400px;
+}
+
+.el-date-picker {
+  --el-datepicker-header-text-color: var(--hd--color-text-primary);
+  --el-datepicker-icon-color: var(--hd--color-text-regular);
+  --el-datepicker-inrange-bg-color: var(--hd--color-primary-20);
+  --el-datepicker-active-color: var(--hd--color-primary-50);
+}
+
+.el-date-range-picker {
+  --el-datepicker-inrange-bg-color: var(--hd--color-primary-20);
+  --el-datepicker-inrange-hover-bg-color: var(--hd--color-primary-20);
+  --el-datepicker-active-color: var(--hd--color-primary-50);
+}
+
+.el-date-editor .el-range-separator {
+  color: var(--hd--color-text-regular);
+}
+
+.el-picker-panel {
+  border: 1px solid var(--hd--border-color-other);
+  background-color: var(--hd--background-color-base);
+}
+
+.el-date-editor .el-range-input {
+  font-size: 14px;
+  background: transparent;
+}
+
+.el-picker-panel__footer {
+  background-color: transparent;
+}
+
+.el-picker-panel .el-time-panel {
+  background-color: var(--hd--background-color-base);
+}
+
+.el-date-table td.today:not(.current) .el-date-table-cell__text {
+  border: 1px solid var(--hd--color-primary);
+  color: var(--hd--color-text-regular);
+}
+
+.el-month-table td.today:not(.current) .cell {
+  border: 1px solid var(--hd--color-primary);
+  color: var(--hd--color-text-regular);
+}
+
+.el-month-table td.current:not(.disabled) .cell {
+  color: var(--hd--color-text-primary);
+  background-color: var(--hd--color-primary-50);
+}

@@ -1,0 +1,48 @@
+/* 媒体查询放大缩小页面比例 */
+@media screen and (max-width: 1920px) {
+  body {
+    zoom: 1;
+  }
+}
+
+@media screen and (min-width: 1680px) and (max-width:1919px) {
+  body {
+    zoom: .875; /* 1680 除以 1920 */ 
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width:1679px) {
+  body {
+    zoom: .75; /* 1440 除以 1920 */
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  body {
+    zoom: .67; /* 1280 除以 1920 */
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    zoom: .533; /* 1024 除以 1920 */
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  body {
+    zoom: .416; /* 800 除以 1920 */
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  body {
+    zoom: .3125; /* 600 除以 1920 */
+  }
+}
+
+@media screen and (max-width: 599px) {
+  body {
+    zoom: .2; /* 400 除以 1920 */
+  }
+}

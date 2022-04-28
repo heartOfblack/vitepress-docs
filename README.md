@@ -1,11 +1,7 @@
-# vitepress-docs
-基于vite-press的文档项目
-
-### 使用
-`npm i`
-`npm run dev`
-
-文档示例参考
-
-- docs目录下的index.md文件
-- .vitepress 目录下 config.js文件 getGuideSidebar函数 配置菜单
+目录结构
+- .vitepress vitepress相关配置
+- components 组件库
+- images 组件库用到的图片
+- md 示例的说明文档，所有示例均在此处写
+- plugins 因为文档是独立的，兼容储能云的样式，plugins和components文件夹内容与储能云项目一致
+- style 相关样式文件

@@ -1,0 +1,34 @@
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  background-color: var(--hd--background-color-base);
+}
+
+body {
+  font-size: 14px;
+
+}
+
+.demo-block{
+  color: var(--hd--color-text-primary)!important;
+}
+/* 
+.source{
+  color: black;
+} */
+.meta{
+  height: 500px!important;
+  overflow: auto!important;
+}
+
+.el-container,
+.el-main,
+.el-aside {
+  height: 100%;
+}

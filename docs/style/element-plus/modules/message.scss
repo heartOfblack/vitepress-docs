@@ -1,0 +1,27 @@
+.el-message {
+  font-size: 14px;
+}
+
+.el-message--success {
+  color: var(--hd--color-primary);
+  background-color: #0f4b45;
+	border: solid 1px #194a41;
+}
+
+.el-message--info {
+  color: var(--hd--color-info);
+  background-color: #323539;
+  border: solid 1px #3f4347;
+}
+
+.el-message--warning {
+  color: var(--hd--color-warning);
+  background-color: #3a2a1a;
+	border: solid 1px #4a3621;
+}
+
+.el-message--error {
+  color: var(--hd--color-danger);
+  background-color: #3a2126;
+	border: solid 1px #4a2a31;
+}

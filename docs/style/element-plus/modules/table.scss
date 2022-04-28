@@ -1,0 +1,33 @@
+.el-table {
+  --el-table-header-bg-color: var(--hd--color-table);
+  --el-table-tr-bg-color: var(--hd--color-table-50);
+  --el-table-expanded-cell-bg-color: var(--hd--color-table);
+
+  font-size: 14px;
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
+  background-color: var(--hd--color-table);
+}
+
+.el-table:not(.el-table--border) {
+  --el-table-border: 0;
+}
+.el-table:not(.el-table--border)::before {
+  height: 0;
+}
+
+.el-table__body-wrapper tr td.el-table-fixed-column--left,
+.el-table__body-wrapper tr td.el-table-fixed-column--right,
+.el-table__body-wrapper tr th.el-table-fixed-column--left,
+.el-table__body-wrapper tr th.el-table-fixed-column--right,
+.el-table__footer-wrapper tr td.el-table-fixed-column--left,
+.el-table__footer-wrapper tr td.el-table-fixed-column--right,
+.el-table__footer-wrapper tr th.el-table-fixed-column--left,
+.el-table__footer-wrapper tr th.el-table-fixed-column--right,
+.el-table__header-wrapper tr td.el-table-fixed-column--left,
+.el-table__header-wrapper tr td.el-table-fixed-column--right,
+.el-table__header-wrapper tr th.el-table-fixed-column--left,
+.el-table__header-wrapper tr th.el-table-fixed-column--right {
+  background-color: var(--hd--color-table);
+}

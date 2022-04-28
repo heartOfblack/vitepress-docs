@@ -1,0 +1,13 @@
+.el-form .el-input {
+  width: 300px;
+}
+
+.el-form .el-textarea {
+  width: 600px;
+}
+
+.el-input-group__append,
+.el-input-group__prepend {
+  border-color: var(--hd--border-color-base);
+  background-color: var(--hd--disabled-border-color-30);
+}
