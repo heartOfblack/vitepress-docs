@@ -87,10 +87,6 @@ function getGuideSidebar() {
       {
         text: '占位图-BaseEmpty',
         link: '/md/BaseEmpty/'
-      },
-      {
-        text: 'Tag-BaseTag',
-        link: '/md/BaseTag/'
       }
     ]
     }
