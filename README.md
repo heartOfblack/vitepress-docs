@@ -14,3 +14,15 @@ vitepress搭建的文档项目
 2. `npm run dev` 运行服务
 3. `npm run build` 打包到dist目录
 4. `npm run serve` 打包后运行该服务可直接查看打包效果
+
+
+### 注意
+
+> 由于vitepress是在node打包，因此存在浏览器限制，当一些第三方的依赖库存在在引入阶段就尝试去调用浏览器API的时候会报错，提示export xxx的错误，大致意思是 commonjs(cjs)格式不允许export(esm)导出， 因此需要用以下方式解决
+
+![解决方式](D:\projects\vitepress-docs\docs\public\images\api-limit.png)
+
+
+
+解决方案参考地址： https://vitejs.cn/vitepress/guide/using-vue.html
+
